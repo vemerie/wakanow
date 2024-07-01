@@ -17,7 +17,7 @@ export class UsersComponent {
   loading!: boolean;
   users!: IUser[];
 
-  constructor(private userService: UserService, private route: RouterEvent) {}
+  constructor(private userService: UserService) {}
 
   ngOnInit(): void {
     this.getAllUsers();
